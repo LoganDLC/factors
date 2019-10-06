@@ -2,11 +2,13 @@
   "name": "factors",
   "version": "1.0.0",
   "main": "dist/index.js",
-	"license": "MIT",
-	"scripts": {
-		"dev": "tsc -w"
-	},
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc -w",
+    "test": "alsatian \"./src/**/*.spec.ts\""
+  },
   "devDependencies": {
+    "alsatian": "^3.0.1",
     "typescript": "3.6.3"
   }
 }

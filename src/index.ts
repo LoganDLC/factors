@@ -10,7 +10,7 @@ function mrFactor(no: number) {
 	return listOfFactors;
 }
 
-function highestCommonFactor(firstNumber: number, secondNumber: number) {
+export function highestCommonFactor(firstNumber: number, secondNumber: number) {
 	const factorsOfFirstNumber = mrFactor(firstNumber);
 	const factorsOfSecondNumber = mrFactor(secondNumber);
 
@@ -22,6 +22,3 @@ function highestCommonFactor(firstNumber: number, secondNumber: number) {
 	return commonfactors.pop();
 }
 
-const commonFactors = highestCommonFactor(-220, -100);
-
-console.log(commonFactors);
